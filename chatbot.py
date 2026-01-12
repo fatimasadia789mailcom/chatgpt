@@ -13,6 +13,7 @@ user_input = st.text_input("You:")
 if user_input:
     # Call OpenAI API
     response = openai.Completion.create(
+        response = openai.Completion.create(
         model="text-davinci-003",
         prompt=user_input,
         max_tokens=150
